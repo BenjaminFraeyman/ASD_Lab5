@@ -1,0 +1,14 @@
+{
+ "id" : "a2d63e85-a583-41c6-9144-feda6ae39eb2",
+ "title" : "test2",
+ "content" : [
+   {
+     "label" : "check1",
+     "checked" : false
+   },
+   {
+     "label" : "check2 checked",
+     "checked" : true
+   }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "id" : "cf3aa0b9-acdd-4e9d-a7d4-3cfb9d393c71",
+ "title" : "gso2",
+ "content" : [
+   {
+     "label" : "unchecked",
+     "checked" : false
+   },
+   {
+     "label" : "checked",
+     "checked" : true
+   }
+ ]
+}

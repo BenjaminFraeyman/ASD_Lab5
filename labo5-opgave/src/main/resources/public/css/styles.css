@@ -1,0 +1,163 @@
+html,
+body {
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+}
+
+.title2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 6px 0 12px;
+    color: #333;
+}
+
+#input {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+#input .note {
+    min-width: 260px;
+    min-height: 200px;
+    width: 260px;
+    height: auto;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    padding: 0.4em 0.8em;
+    ;
+}
+
+#input .note .child {
+    position: flex;
+    flex-direction: column;
+    top: 5px;
+    bottom: 5px;
+    left: 15px;
+    right: 15px;
+}
+
+#input .note .buttons {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+}
+
+#content-note textarea {
+    height: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#input .note .child>* {
+    margin-bottom: 4px;
+}
+
+.input-group {
+    margin-bottom: 4px;
+}
+
+#input .note .type input[type="radio"] {
+    display: inline-block;
+}
+
+#input .note .type label:hover,
+#input .note .type label input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+#content-note {
+    display: table;
+    flex: 1;
+    width: 100%;
+}
+
+#content-checklist {
+    display: none;
+}
+
+#content-add-todo {
+    display: none;
+    flex: 1;
+}
+
+#content-add-todo button {
+    margin-bottom: 40px;
+}
+
+#notes {
+    width: 100%;
+}
+
+.rows {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38px;
+    bottom: 0;
+    overflow: auto;
+}
+
+.note {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #aaa;
+    min-width: 220px;
+    min-height: 160px;
+    height: 160px;
+    margin: 4px;
+    padding: 0.2em 0.4em;
+    background-color: lightyellow;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(204, 204, 204, 1);
+    box-shadow: 5px 5px 10px 0px rgba(204, 204, 204, 1);
+}
+
+.note .title {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px 8px;
+    border-bottom: 1px solid #999;
+}
+
+.note .myrow {
+    margin: 4px 4px 2px;
+    height: 22px;
+    line-height: 1.2;
+}
+
+.note .myrow .item {
+    padding-left: 5px;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+}
+
+.edit-btn {
+    color: #CCCCB3;
+}
+
+.glyphicon-check,
+.glyphicon-unchecked {
+    color: #888;
+    margin-left: 6px;
+}
+
+.glyphicon-edit {
+    vertical-align: text-top;
+}

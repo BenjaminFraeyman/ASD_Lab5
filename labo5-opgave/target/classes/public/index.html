@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Notes app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title2 text-center">Lab 5: Notes App</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="input">
+                    <form id="myForm" class="form" method="post">
+                        <div class="note">
+                            <div class="child">
+                                <div class="type">
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" id="typeNote" name="type" value="note" checked="checked"> Note
+                                        </label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" id="typeTodo" name="type" value="checklist"> Checklist
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="titleIn">
+                                    <input type="text" class="form-control input" name="title" autocomplete="off" placeholder="Title">
+                                </div>
+                                <div id="content-note">
+                                    <textarea class="form-control" placeholder="Note" autocomplete="off"></textarea>
+                                </div>
+                                <div id="content-checklist">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon">
+                                            <input type="checkbox" id="itemCheck[0]" name="itemCheck[0]">
+                                        </span>
+                                        <input type="text" class="form-control" id="itemLabel[0]" name="itemLabel[0]" autocomplete="off">
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                                <div id="content-add-todo">
+                                    <button type="button" class="btn btn-block btn-sm btn-default" onclick="addToDo()">Add todo</button>
+                                </div>
+                                <div class="buttons">
+                                    <button type="button" class="btn btn-link btn-sm" onclick="resetForm()">Reset</button>
+                                    <button type="submit" id="saveButton" class="btn btn-info btn-sm">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>My Notes</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="notes"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/domtastic.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
